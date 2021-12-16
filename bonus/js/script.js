@@ -31,6 +31,14 @@ const app = new Vue(
             },
             clickCircle: function (index) {
                 this.counter = index;
+            },
+            autoRoll: function(){
+                this.time = setInterval(()=>{
+                    this.nxt();
+                }, 3000);
+            },
+            stopAutoRoll: function(){
+                clearTimeout(this.time);
             }
         }
     }

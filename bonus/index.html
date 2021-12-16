@@ -13,7 +13,7 @@
 
 <body>
   <div id="app" class="container">
-    <div class="slider-wrapper">
+    <div @mouseleave="autoRoll" @mouseover="stopAutoRoll" class="slider-wrapper">
       <div @click="prv" class="prev">
         <i class="fas fa-angle-left"></i>
       </div>
