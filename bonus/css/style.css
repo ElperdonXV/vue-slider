@@ -75,3 +75,7 @@ html {
 .nav>i.active {
   color: aqua;
 }
+
+.nav>i:hover{
+  cursor: pointer;
+}

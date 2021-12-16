@@ -28,6 +28,9 @@ const app = new Vue(
                 if (this.counter > this.images.length - 1) {
                     this.counter = 0;
                 }
+            },
+            clickCircle: function (index) {
+                this.counter = index;
             }
         }
     }
