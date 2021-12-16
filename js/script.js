@@ -17,7 +17,12 @@ const app = new Vue(
             ]
         },
         methods: {
-            
+            prv: function(){
+                this.counter -=1;
+            },
+            nxt: function(){
+                this.counter +=1;
+            }
         }
     }
 );
